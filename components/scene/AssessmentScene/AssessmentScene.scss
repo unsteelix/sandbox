@@ -1,0 +1,136 @@
+.assessment-scene {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  //height: 70vh;
+  box-sizing: border-box;
+
+  .left,
+  .right {
+    //display: grid;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+
+    .header {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      color: #d3d3d3;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.assessment-editor-container,
+.assessment-render-container {
+  overflow-y: auto;
+
+  .header {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+
+    text-transform: uppercase;
+
+    color: #d3d3d3;
+  }
+}
+
+.left {
+  grid-template-rows: 70px 1fr 40px;
+  padding: 50px;
+
+  .buttons-row {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin-top: 10px;
+
+    .new-session-button{
+      cursor: pointer;
+    }
+  }
+
+  .assessment-block{
+    border: 1px solid #cccccc;
+    height: 100%;
+
+    .assessment-title{
+      background-color: #f5f5f5;
+      font-size: 20px;
+      padding: 10px 15px;
+    }
+
+    .assessment-items{
+      padding: 20px;
+
+      .list-item{
+        display: flex;
+        flex-direction: column;
+
+        .one-item{
+          margin-bottom: 5px;
+          border: 1px solid #cccccc;
+          box-sizing: border-box;
+          min-height: 42px;
+          display: flex;
+
+          .title{
+            padding: 10px 15px;
+          }
+          .blue-part{
+            background-color: #39c2d7;
+            width: 4px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.right {
+  grid-template-rows: 0 50px 1fr 40px;
+  padding: 50px 50px 100px 50px;
+  border-left: 1px solid #f5f5f5;
+
+  .buttons-row {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    margin-top: 10px;
+  }
+
+  & .close-btn {
+    display: flex;
+    justify-self: flex-end;
+    position: relative;
+    width: 80px;
+    height: 20px;
+    top: -20px;
+    cursor: pointer;
+
+    div {
+      line-height: 18px;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.assessment-editor-container {
+  display: grid;
+  grid-template-rows: 30px 40px 1fr 50px;
+}
+
+.assessment-render-container {
+  padding: 20px;
+}

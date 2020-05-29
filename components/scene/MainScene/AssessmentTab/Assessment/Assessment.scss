@@ -1,0 +1,80 @@
+.asmt-alignment {
+  font-style: normal;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.asmt-item-header {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  background: #F5F5F5;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+  height: 40px;
+
+  .title {
+    @extend .asmt-alignment;
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 20px;
+
+    color: #464547;
+  }
+
+  .expand-btn,
+  .collapsed-btn{
+    @extend .asmt-alignment;
+    justify-content: flex-end;
+    padding-right: 20px;
+
+    cursor: pointer;
+
+    color: #464547;
+  }
+
+  .expand-btn > img {
+    transform: rotate(90deg);
+    transform-origin: 8px 5px;
+  }
+}
+
+.asmt-item.expanded {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  background: #F5F5F5;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+
+  .asmt-content-container {
+    display: grid;
+    grid-row-gap: 20px;
+    padding: 10px 20px;
+
+    input {
+      height: 40px;
+      padding-left: 10px;
+    }
+
+    .drag-and-drop {
+      display: grid;
+      text-align: center;
+
+      min-height: 122px;
+
+      padding: 20px;
+
+      background: #FFFFFF;
+
+      border: 1px dashed #CCCCCC;
+      box-sizing: border-box;
+    }
+
+    .buttons-row {
+      display: flex;
+      justify-content: space-between;
+      height: 40px;
+    }
+  }
+}

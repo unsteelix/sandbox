@@ -1,0 +1,26 @@
+.init-sandbox-scene {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
+  height: 90vh;
+
+  .title {
+    align-self: end;
+
+    font-size: 40px;
+  }
+
+  .init-sandbox-scene-button {
+    align-self: baseline;
+
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #39C2D7;
+    font-size: 40px;
+    color: #FFFFFF;
+    padding: 0 20px;
+  }
+}

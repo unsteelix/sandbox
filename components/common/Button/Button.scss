@@ -1,0 +1,45 @@
+.btn-comp {
+  background: #464547;
+  color: #FFFFFF;
+
+  font-size: 16px;
+
+  .btn-content {
+    padding: 10px;
+    .prevIcon {
+      margin-right: 5px;
+    }
+    .btn-text {
+      display: inline-block;
+    }
+    .nextIcon {
+      margin-left: 5px;
+    }
+  }
+
+  &.blue {
+    background: #39C2D7 !important;
+    border: none;
+  }
+
+  &.blue-border {
+    background: white;
+    color: black !important;
+    border: 1px solid #39C2D7 !important;
+  }
+
+  &.green {
+    background: #CEDB56 !important;
+    border: none;
+  }
+
+  &.red {
+    background: #9a0c0b !important;
+    border: none;
+  }
+
+  &.gray {
+    background: gray !important;
+    border: none;
+  }
+}

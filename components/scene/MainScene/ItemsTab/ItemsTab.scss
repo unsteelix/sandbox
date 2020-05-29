@@ -1,0 +1,66 @@
+.create-item-div {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  height: 40px;
+
+  .create-item-button {
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    background: #39C2D7;
+    color: #FFFFFF;
+  }
+}
+
+.items-content-container{
+    .items-container {
+      overflow: auto;
+      padding-right: 10px;
+    }
+
+    .custom-items .items-container {
+      min-height: 200px;
+      height: 40vh;
+    }
+
+    @media screen and (max-height: 750px) {
+      .custom-items .items-container {
+        height: 25vh;
+      }
+    }
+
+    @media screen and (min-height: 750px) {
+      .custom-items .items-container {
+        height: 25vh;
+      }
+    }
+
+    @media screen and (min-height: 800px) {
+      .custom-items .items-container {
+        height: 30vh;
+      }
+    }
+
+    @media screen and (min-height: 850px) {
+      .custom-items .items-container {
+        height: 32vh;
+      }
+    }
+
+    @media screen and (min-height: 900px) {
+      .custom-items .items-container {
+        height: 35vh;
+      }
+    }
+
+    @media screen and (min-height: 950px) {
+      .custom-items .items-container {
+        height: 40vh;
+      }
+    }
+}

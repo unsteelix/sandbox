@@ -1,0 +1,22 @@
+.item {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px 40px;
+
+  height: 40px;
+  background: #FFFFFF;
+
+  border: 1px solid #CCCCCC;
+  border-left: 5px solid #39C2D7;
+
+  margin-bottom: 10px;
+
+  &.sample {
+    grid-template-columns: 40px 1fr 40px 0px;
+    border-left: 5px solid #CCCCCC;
+  }
+
+  .item-title {
+    display: grid;
+    align-items: center;
+  }
+}

@@ -1,0 +1,19 @@
+.search-input {
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  margin-bottom: 20px;
+  border: 1px solid #CCCCCC;
+
+  input {
+    padding-left: 15px;
+    border: none;
+  }
+
+  .search-icon {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+  }
+}
